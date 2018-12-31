@@ -19,15 +19,14 @@
 			
 			<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 			    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-			      <li class="nav-item active">
-			        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="#">Link</a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-			      </li>
+			      <?php 
+			      	wp_nav_menu(array(
+			      		'theme_location' => 'primary',
+			      		'menu_class'		 => 'primary_menu',
+			      		'container'			 => false,
+			      		'items_wrap'		=> '%3$s'
+			      	));
+			      ?>
 			    </ul>
 			  </div>
 		</div>

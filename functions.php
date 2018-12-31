@@ -12,6 +12,9 @@ function customtheme_setup() {
 	register_nav_menus( array(
 		"primary" => __("Primary Menu", "customtheme_setup")
 	));
+
+	// Add theme support for document title tag
+	add_theme_support("title-tag");
 }
 add_action("after_setup_theme", "customtheme_setup");
 
