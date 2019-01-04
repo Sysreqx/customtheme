@@ -18,17 +18,17 @@
 			</button>
 			
 			<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-			    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-			      <?php 
-			      	wp_nav_menu(array(
-			      		'theme_location' => 'primary',
-			      		'menu_class'		 => 'primary_menu',
-			      		'container'			 => false,
-			      		'items_wrap'		=> '%3$s'
-			      	));
-			      ?>
-			    </ul>
-			  </div>
+				<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+					<?php 
+					wp_nav_menu(array(
+						'theme_location' => 'primary',
+						'menu_class'		 => 'primary_menu',
+						'container'			 => false,
+						'items_wrap'		 => '%3$s'
+					));
+					?>
+				</ul>
+			</div>
 		</div>
 	</nav>
 
