@@ -2,7 +2,7 @@
 
 // Loading in scripts
 function enqueue_custom_styles() {
-	wp_enqueue_script('bootstrap-js', '//stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js', array('jquery'))
+	wp_enqueue_script('bootstrap-js', '//stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js', array('jquery'));
 	wp_enqueue_style('bootstrap', '//stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css');
 	wp_enqueue_style('customtheme-style', get_stylesheet_uri());
 }
