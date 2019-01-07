@@ -1,3 +1,12 @@
+<?php
+/**
+ * The template for displaying the header
+ *
+ *
+ * @package CustomTheme
+ * @since Custom Theme 1.0
+ */
+?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
