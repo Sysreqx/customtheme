@@ -18,6 +18,15 @@
 					<?php the_content(); ?>
 				<?php endwhile; ?>
 			<?php endif; ?>
+			
+			<?php 
+			if (is_singular('post')) {
+				the_post_navigation( array( 
+					'next_text' => 'Next',
+					'prev_text' => 'Previous'
+				) );
+			}
+			?>
 		</div>
 
 		<div class="col-4">
