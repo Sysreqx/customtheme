@@ -17,7 +17,7 @@
 	<?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 	<?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
 	<nav class="navbar navbar-expand-lg navbar-light gradient-bg ">
 		<div class="container">
 			<a class="navbar-brand" href="#">Navbar</a>
