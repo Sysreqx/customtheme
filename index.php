@@ -10,16 +10,20 @@
 <?php get_header(); ?>
 
 <div class="container">
-	<?php if (have_posts() ) : ?>
-		<?php while (have_posts() ) : the_post(); ?>
-			<h2>A single blog post</h2>
-
-			<?php the_title(); ?>
-			<?php the_content(); ?>
-		<?php endwhile; ?>
-	<?php endif; ?>
-
-	<?php get_sidebar() ?>
+	<div class="row">
+		<div class="col-8">
+			<?php if (have_posts() ) : ?>
+				<?php while (have_posts() ) : the_post(); ?>
+					<?php the_title(sprintf('<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url(get_premalink())), '</a></h2>'); ?>
+					<?php the_content(); ?>
+				<?php endwhile; ?>
+			<?php endif; ?>
+		</div>
+		
+		<div class="col-4">
+			<?php get_sidebar() ?>
+		</div>
+	</div>
 </div>
 
 <?php get_footer(); ?>

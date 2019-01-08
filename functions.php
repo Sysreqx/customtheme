@@ -37,4 +37,6 @@ function custom_shortcode($atts, $content = null) {
 }
 add_shortcode( 'one_third', 'customtheme_widgets' );
 
+// remove_filter( 'the_content', 'wpautop' );
+
 ?>
