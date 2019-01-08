@@ -14,6 +14,8 @@
 		<div class="col-8">
 			<?php if (have_posts() ) : ?>
 				<?php while (have_posts() ) : the_post(); ?>
+					<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+						
 					<h1><?php the_title(); ?></h1>
 					<p><?php the_date(); ?></p>
 					<?php the_content(); ?>
@@ -28,6 +30,7 @@
 							'separator' => '<span class="screen-reader-text">, </span>'
 						) );
 					?>
+					</div>
 				<?php endwhile; ?>
 			<?php endif; ?>
 
