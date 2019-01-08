@@ -31,4 +31,10 @@ function customtheme_widgets() {
 	));
 }
 add_action('widgets_init', 'customtheme_widgets');
+
+function custom_shortcode($atts, $content = null) {
+	return '<div class="col-sm">' . $content . '</div>';
+}
+add_shortcode( 'one_third', 'customtheme_widgets' );
+
 ?>
